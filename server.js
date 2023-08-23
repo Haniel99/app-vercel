@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 const server = http.createServer(app);
 app.get('*',(req,res,next)=>{
     res.status(200).json({
-      message:'bad request'
+      message:'Server is ssuccefully'
     })
   })
 app.listen(port, ()=>{
