@@ -8,6 +8,11 @@ app.get('*',(req,res,next)=>{
       message:'Server is ssuccefully'
     })
   })
+app.get('/index', (req,res)=>{
+    res.status(200).json({
+        msg: "Hola"
+    })
+})
 app.listen(port, ()=>{
     console.log("the app is nunning on: ", port);
 });
