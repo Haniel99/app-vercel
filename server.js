@@ -3,9 +3,9 @@ const http = require('http');
 const app = express();
 const port = process.env.PORT || 3000;
 const server = http.createServer(app);
-app.get('*',(req,res,next)=>{
+app.get('/',(req,res)=>{
     res.status(200).json({
-      message:'Server is ssuccefully'
+      message:'Serverss is ssuccefully'
     })
   })
 app.get('/index', (req,res)=>{
